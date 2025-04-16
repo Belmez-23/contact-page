@@ -7,4 +7,4 @@
 
 Страница наполнена и другими псевдо-контактными данными для образца.
 
-Страница https://belmez-23.github.io/contact-page/contacts
+Страница https://belmez-23.github.io/contact-page/

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>     
+            
+<link rel="stylesheet" href="index_files/app-RRcr8dl.css">
+<script type="importmap" data-turbo-track="reload">
+{
+    "imports": {
+        "app": "/assets/app-jgPm2-L.js",
+        "/assets/bootstrap.js": "/assets/bootstrap-xCO4u8H.js",
+        "/assets/styles/app.css": "data:application/javascript,",
+        "@symfony/stimulus-bundle": "/assets/@symfony/stimulus-bundle/loader-kxG46ja.js",
+        "@hotwired/stimulus": "/assets/vendor/@hotwired/stimulus/stimulus.index-S4zNcea.js",
+        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-qoRywO9.js",
+        "/assets/@symfony/ux-turbo/turbo_controller.js": "/assets/@symfony/ux-turbo/turbo_controller-zl4y2v3.js",
+        "/assets/controllers/hello_controller.js": "/assets/controllers/hello_controller-VYgvytJ.js",
+        "@hotwired/turbo": "/assets/vendor/@hotwired/turbo/turbo.index-pT15T6h.js",
+        "/assets/controllers/csrf_protection_controller.js": "/assets/controllers/csrf_protection_controller-E_gSC5e.js"
+    }
+}
+</script><script async="" data-turbo-track="reload">
+if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) (function () {
+    const script = document.createElement('script');
+    script.src = 'https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js';
+    script.setAttribute('async', 'async');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.setAttribute('integrity', 'sha384-ie1x72Xck445i0j4SlNJ5W5iGeL3Dpa0zD48MZopgWsjNB/lt60SuG1iduZGNnJn');
+    script.setAttribute('data-turbo-track', 'reload');
+    document.head.appendChild(script);
+})();
+</script>
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/app-jgPm2-L.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/bootstrap-xCO4u8H.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/@symfony/stimulus-bundle/loader-kxG46ja.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/vendor/@hotwired/stimulus/stimulus.index-S4zNcea.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/@symfony/stimulus-bundle/controllers-qoRywO9.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/@symfony/ux-turbo/turbo_controller-zl4y2v3.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/controllers/hello_controller-VYgvytJ.js">
+<link rel="modulepreload" href="http://127.0.0.1:8000/assets/vendor/@hotwired/turbo/turbo.index-pT15T6h.js">
+<script type="module" data-turbo-track="reload">import 'app';</script>    </head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:8000/">На главную</a></li>
+            <li><a href="http://127.0.0.1:8000/">Услуги</a></li>
+            <li><a href="http://127.0.0.1:8000/">Информация</a></li>
+            <li><a href="http://127.0.0.1:8000/">О компании</a></li>
+        </ul>
+        <div class="contact-number">
+            <p>☎ 8-800-DIGITS</p>
+        </div>
+    </nav>
+    <div class="contact-container">
+        <h1>Контактная информация</h1>
+        <div class="contact-details">
+            <p><strong>Телефон:</strong> 8-800-DIGITS</p>
+            <p><strong>Email:</strong> <a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+            <p><strong>Рабочие часы:</strong> ПН-ПТ с 9:00 до 18:00</p>
+            <p><strong>Юридический адрес:</strong> г. Москва, ул. Стандартная, д. 1</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <ul class="footer-menu">
+            <li><h3>Информация</h3>
+                <ul class="submenu">
+                    <li>О компании</li>
+                    <li>Вакансии</li>
+                    <li>Контакты</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-contact">
+            <p>8-800-DIGITS</p>
+            <p><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+            <p>ПН-ПТ с 9:00 до 18:00</p>
+            <p>г. Москва, ул. Стандартная, д. 1</p>
+        </div>
+    </footer>
+
+<div id="sfwdt20191c" class="sf-toolbar" role="region" aria-label="Symfony Web Debug Toolbar" data-sfurl="http://127.0.0.1:8000/_wdt/20191c" style="display: block;"><!-- START of Symfony Web Debug Toolbar -->
+<div id="sfMiniToolbar-20191c" class="sf-minitoolbar" data-no-turbolink="" data-turbo="false" style="display: block;">
+    <button type="button" title="Show Symfony toolbar" id="sfToolbarMiniToggler-20191c" accesskey="D" aria-expanded="false" aria-controls="sfToolbarMainContent-20191c">
+        <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Symfony" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .9C5.8.9.9 5.8.9 12a11 11 0 1 0 22.2 0A11 11 0 0 0 12 .9zm6.5 6c-.6 0-.9-.3-.9-.8 0-.2 0-.4.2-.6l.2-.4c0-.3-.5-.4-.6-.4-1.8.1-2.3 2.5-2.7 4.4l-.2 1c1 .2 1.8 0 2.2-.3.6-.4-.2-.7-.1-1.2.1-.3.5-.5.7-.6.5 0 .7.5.7.9 0 .7-1 1.8-3 1.8l-.6-.1-.6 2.4c-.4 1.6-.8 3.8-2.4 5.7-1.4 1.7-2.9 1.9-3.5 1.9-1.2 0-1.9-.6-2-1.5 0-.8.7-1.3 1.2-1.3.6 0 1.1.5 1.1 1s-.2.6-.4.6c-.1.1-.3.2-.3.4 0 .1.1.3.4.3.5 0 .8-.3 1.1-.5 1.2-.9 1.6-2.7 2.2-5.7l.1-.7.7-3.2c-.8-.6-1.3-1.4-2.4-1.7-.6-.1-1.1.1-1.5.5-.4.5-.2 1.1.2 1.5l.7.6c.7.8 1.2 1.6 1 2.5-.3 1.5-2 2.6-4 1.9-1.8-.6-2-1.8-1.8-2.5.2-.6.6-.7 1.1-.6.5.2.6.7.6 1.2l-.1.3c-.2.1-.3.3-.3.4-.1.4.4.6.7.7.7.3 1.6-.2 1.8-.8a1 1 0 0 0-.4-1.1l-.7-.8c-.4-.4-1.1-1.4-.7-2.6.1-.5.4-.9.7-1.3a4 4 0 0 1 2.8-.6c1.2.4 1.8 1.1 2.6 1.8.5-1.2 1-2.4 1.8-3.5.9-.9 1.9-1.6 3.1-1.7 1.3.2 2.2.7 2.2 1.6 0 .4-.2 1.1-.9 1.1z"></path></svg>
+
+    </button>
+</div>
+<div id="sfToolbarClearer-20191c" class="sf-toolbar-clearer" style="display: none;"></div>
+
+<div id="sfToolbarMainContent-20191c" class="sf-toolbarreset notranslate clear-fix" data-no-turbolink="" data-turbo="false" style="display: none;">
+                                            
+    
+    
+    
+    
+    
+    <div class="sf-toolbar-block sf-toolbar-block-request sf-toolbar-status-normal ">
+    <a href="http://127.0.0.1:8000/_profiler/20191c?panel=request">        <div class="sf-toolbar-icon">        <span class="sf-toolbar-status sf-toolbar-status-green">200</span>
+                                            <span class="sf-toolbar-label"> @</span>
+            <span class="sf-toolbar-value sf-toolbar-info-piece-additional">contacts</span>
+            </div>
+    </a>        <div class="sf-toolbar-info">        <div class="sf-toolbar-info-group">
+            <div class="sf-toolbar-info-piece">
+                <b>HTTP status</b>
+                <span>200 OK</span>
+            </div>
+
+            
+            <div class="sf-toolbar-info-piece">
+                <b>Controller</b>
+                <span>            <a href="file:///home/moscow/MyProjects/contact_page/src/Controller/ContactController.php#L15" title="App\Controller\ContactController">ContactController :: index</a>
+    </span>
+            </div>
+
+            <div class="sf-toolbar-info-piece">
+                <b>Route name</b>
+                <span>contacts</span>
+            </div>
+
+            <div class="sf-toolbar-info-piece">
+                <b>Has session</b>
+                <span>no</span>
+            </div>
+
+            <div class="sf-toolbar-info-piece">
+                <b>Stateless Check</b>
+                <span>no</span>
+            </div>
+        </div>
+
+        
+            </div>
+</div>
+
+
+                                                                                        
+    
+    
+    <div class="sf-toolbar-block sf-toolbar-block-time sf-toolbar-status-normal ">
+    <a href="http://127.0.0.1:8000/_profiler/20191c?panel=time">        <div class="sf-toolbar-icon">        <svg xmlns="http://www.w3.org/2000/svg" data-icon-name="icon-tabler-chart-infographic" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img">
+    <title>Time</title>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <circle cx="7" cy="7" r="4"></circle>
+    <path d="M7 3v4h4"></path>
+    <line x1="9" y1="17" x2="9" y2="21"></line>
+    <line x1="17" y1="14" x2="17" y2="21"></line>
+    <line x1="13" y1="13" x2="13" y2="21"></line>
+    <line x1="21" y1="12" x2="21" y2="21"></line>
+</svg>
+
+        <span class="sf-toolbar-value">26</span>
+        <span class="sf-toolbar-label">ms</span>
+    </div>
+    </a>        <div class="sf-toolbar-info">        <div class="sf-toolbar-info-piece">
+            <b>Total time</b>
+            <span>26 ms</span>
+        </div>
+        <div class="sf-toolbar-info-piece">
+            <b>Initialization time</b>
+            <span>13 ms</span>
+        </div>
+    </div>
+</div>
+
+
+                                                                
+    
+    <div class="sf-toolbar-block sf-toolbar-block-time sf-toolbar-status-normal ">
+    <a href="http://127.0.0.1:8000/_profiler/20191c?panel=time">        <div class="sf-toolbar-icon">                <svg xmlns="http://www.w3.org/2000/svg" data-icon-name="icon-tabler-cpu" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img">
+    <title>Memory</title>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <rect x="5" y="5" width="14" height="14" rx="1"></rect>
+    <path d="M9 9h6v6h-6z"></path>
+    <path d="M3 10h2"></path>
+    <path d="M3 14h2"></path>
+    <path d="M10 3v2"></path>
+    <path d="M14 3v2"></path>
+    <path d="M21 10h-2"></path>
+    <path d="M21 14h-2"></path>
+    <path d="M14 21v-2"></path>
+    <path d="M10 21v-2"></path>
+</svg>
+
+        <span class="sf-toolbar-value">4.0</span>
+        <span class="sf-toolbar-label">MiB</span>
+    </div>
+    </a>        <div class="sf-toolbar-info">        <div class="sf-toolbar-info-piece">
+            <b>Peak memory usage</b>
+            <span>4.0 MiB</span>
+        </div>
+
+        <div class="sf-toolbar-info-piece">
+            <b>PHP memory limit</b>
+            <span>128 MiB</span>
+        </div>
+    </div>
+</div>
+
+
+                                                                
+                                                                
+    
+    <div class="sf-toolbar-block sf-toolbar-block-ajax sf-toolbar-status-normal" style="display: none;">
+            <div class="sf-toolbar-icon">        <svg xmlns="http://www.w3.org/2000/svg" data-icon-name="icon-tabler-arrows-down-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <line x1="17" y1="3" x2="17" y2="21"></line>
+    <path d="M10 18l-3 3l-3 -3"></path>
+    <line x1="7" y1="21" x2="7" y2="3"></line>
+    <path d="M20 6l-3 -3l-3 3"></path>
+</svg>
+
+        <span class="sf-toolbar-value sf-toolbar-ajax-request-counter">0</span>
+    </div>
+            <div class="sf-toolbar-info">        <div class="sf-toolbar-info-piece">
+            <span class="sf-toolbar-header">
+                <b class="sf-toolbar-ajax-info">0 AJAX requests</b>
+                <b class="sf-toolbar-action">(<a class="sf-toolbar-ajax-clear" href="javascript:void(0);">Clear</a>)</b>
+            </span>
+        </div>
+        <div class="sf-toolbar-info-piece">
+            <table class="sf-toolbar-ajax-requests">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Profile</th>
+                        <th>Method</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>URL</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody class="sf-toolbar-ajax-request-list"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+                                                                
+                                                                            
+                                                                        
+                                                                
+                                                                
+                                                                        
+        
+        <div class="sf-toolbar-block sf-toolbar-block-security sf-toolbar-status-normal ">
+    <a href="http://127.0.0.1:8000/_profiler/20191c?panel=security">        <div class="sf-toolbar-icon">            <svg xmlns="http://www.w3.org/2000/svg" data-icon-name="icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img">
+    <title>Security</title>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <circle cx="12" cy="7" r="4"></circle>
+    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+</svg>
+
+            <span class="sf-toolbar-value">n/a</span>
+        </div>
+    </a>        <div class="sf-toolbar-info">            
+            <div class="sf-toolbar-info-group">
+                                                            <div class="sf-toolbar-info-piece">
+                            <b>Authenticated</b>
+                            <span class="sf-toolbar-status sf-toolbar-status-yellow">No</span>
+                        </div>
+                    
+                                            <div class="sf-toolbar-info-piece">
+                            <b>Firewall name</b>
+                            <span>main</span>
+                        </div>
+                    
+                                                </div>
+        </div>
+</div>
+
+    
+                                                                    
+    
+    <div class="sf-toolbar-block sf-toolbar-block-twig sf-toolbar-status-normal ">
+    <a href="http://127.0.0.1:8000/_profiler/20191c?panel=twig">        <div class="sf-toolbar-icon">        <svg xmlns="http://www.w3.org/2000/svg" data-icon-name="icon-tabler-seeding" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img">
+    <title>Twig</title>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3"></path>
+    <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3"></path>
+    <line x1="12" y1="20" x2="12" y2="10"></line>
+</svg>
+
+        <span class="sf-toolbar-value">6</span>
+        <span class="sf-toolbar-label">ms</span>
+    </div>
+    </a>        <div class="sf-toolbar-info">                                <div class="sf-toolbar-info-piece">
+            <b>Entry View</b>
+            <span>
+                                      <a href="file:///home/moscow/MyProjects/contact_page/templates/contact/index.html.twig#L1" title="/home/moscow/MyProjects/contact_page/templates/contact/index.html.twig">
+                         contact/index.html.twig
+                     </a>
+                             </span>
+        </div>
+        <div class="sf-toolbar-info-piece">
+            <b>Render Time</b>
+            <span>6 ms</span>
+        </div>
+        <div class="sf-toolbar-info-piece">
+            <b>Template Calls</b>
+            <span class="sf-toolbar-status">4</span>
+        </div>
+        <div class="sf-toolbar-info-piece">
+            <b>Block Calls</b>
+            <span class="sf-toolbar-status">6</span>
+        </div>
+        <div class="sf-toolbar-info-piece">
+            <b>Macro Calls</b>
+            <span class="sf-toolbar-status">0</span>
+        </div>
+    </div>
+</div>
+
+
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+    
+                                                                
+    
+                                                                
+                                                                                    
+    
+    
+    <div class="sf-toolbar-block sf-toolbar-block-config sf-toolbar-status-normal sf-toolbar-block-right">
+    <a href="http://127.0.0.1:8000/_profiler/20191c?panel=config">        <div class="sf-toolbar-icon">        <span class="sf-toolbar-label">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Symfony" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .9C5.8.9.9 5.8.9 12a11 11 0 1 0 22.2 0A11 11 0 0 0 12 .9zm6.5 6c-.6 0-.9-.3-.9-.8 0-.2 0-.4.2-.6l.2-.4c0-.3-.5-.4-.6-.4-1.8.1-2.3 2.5-2.7 4.4l-.2 1c1 .2 1.8 0 2.2-.3.6-.4-.2-.7-.1-1.2.1-.3.5-.5.7-.6.5 0 .7.5.7.9 0 .7-1 1.8-3 1.8l-.6-.1-.6 2.4c-.4 1.6-.8 3.8-2.4 5.7-1.4 1.7-2.9 1.9-3.5 1.9-1.2 0-1.9-.6-2-1.5 0-.8.7-1.3 1.2-1.3.6 0 1.1.5 1.1 1s-.2.6-.4.6c-.1.1-.3.2-.3.4 0 .1.1.3.4.3.5 0 .8-.3 1.1-.5 1.2-.9 1.6-2.7 2.2-5.7l.1-.7.7-3.2c-.8-.6-1.3-1.4-2.4-1.7-.6-.1-1.1.1-1.5.5-.4.5-.2 1.1.2 1.5l.7.6c.7.8 1.2 1.6 1 2.5-.3 1.5-2 2.6-4 1.9-1.8-.6-2-1.8-1.8-2.5.2-.6.6-.7 1.1-.6.5.2.6.7.6 1.2l-.1.3c-.2.1-.3.3-.3.4-.1.4.4.6.7.7.7.3 1.6-.2 1.8-.8a1 1 0 0 0-.4-1.1l-.7-.8c-.4-.4-1.1-1.4-.7-2.6.1-.5.4-.9.7-1.3a4 4 0 0 1 2.8-.6c1.2.4 1.8 1.1 2.6 1.8.5-1.2 1-2.4 1.8-3.5.9-.9 1.9-1.6 3.1-1.7 1.3.2 2.2.7 2.2 1.6 0 .4-.2 1.1-.9 1.1z"></path></svg>
+
+        </span>
+        <span class="sf-toolbar-value">7.2.5</span>
+    </div>
+    </a>        <div class="sf-toolbar-info">        
+        <div class="sf-toolbar-info-group">
+            <div class="sf-toolbar-info-piece">
+                <b>Profiler token</b>
+                <span>
+                                            <a href="http://127.0.0.1:8000/_profiler/20191c">20191c</a>
+                                    </span>
+            </div>
+
+                            <div class="sf-toolbar-info-piece">
+                    <b>Environment</b>
+                    <span>dev</span>
+                </div>
+            
+                            <div class="sf-toolbar-info-piece">
+                    <b>Debug</b>
+                    <span class="sf-toolbar-status sf-toolbar-status-green">enabled</span>
+                </div>
+                    </div>
+
+        <div class="sf-toolbar-info-group">
+            <div class="sf-toolbar-info-piece sf-toolbar-info-php">
+                <b>PHP version</b>
+                <span>
+                    8.3.6
+                    &nbsp; <a href="http://127.0.0.1:8000/_profiler/phpinfo">View phpinfo()</a>
+                </span>
+            </div>
+
+            <div class="sf-toolbar-info-piece sf-toolbar-info-php-ext">
+                <b>PHP Extensions</b>
+                                <span class="sf-toolbar-status sf-toolbar-status-gray">Xdebug ✗</span>
+                                <span class="sf-toolbar-status sf-toolbar-status-gray">APCu ✗</span>
+                <span class="sf-toolbar-status sf-toolbar-status-green">OPcache ✓</span>
+            </div>
+
+            <div class="sf-toolbar-info-piece">
+                <b>PHP SAPI</b>
+                <span>fpm-fcgi</span>
+            </div>
+        </div>
+
+        <div class="sf-toolbar-info-group">
+                            <div class="sf-toolbar-info-piece">
+                    <b>Resources</b>
+                    <span>
+                        <a href="https://symfony.com/doc/7.2.5/index.html" rel="help">
+                            Read Symfony 7.2.5 Docs
+                        </a>
+                    </span>
+                </div>
+                <div class="sf-toolbar-info-piece">
+                    <b>Help</b>
+                    <span>
+                        <a href="https://symfony.com/support">
+                            Symfony Support Channels
+                        </a>
+                    </span>
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+                            
+    
+<div class="sf-cli sf-toolbar-block sf-toolbar-block-sf-cli sf-toolbar-status-normal sf-toolbar-block-right">
+	<div class="sf-toolbar-icon">
+		<span class="sf-toolbar-label">
+			<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" enable-background="new 0 0 24 24" version="1.1">
+				<path fill="#fff" fill-rule="evenodd" d="M 24 2.398438 C 24 1.074219 22.925781 0 21.601562 0 L 2.398438 0 C 1.074219 0 0 1.074219 0 2.398438 L 0 21.601562 C 0 22.925781 1.074219 24 2.398438 24 L 21.601562 24 C 22.925781 24 24 22.925781 24 21.601562 Z M 24 2.398438"></path>
+				<path d="M 18.078125 3.109375 C 16.742188 3.15625 15.578125 3.894531 14.710938 4.910156 C 13.75 6.027344 13.109375 7.351562 12.648438 8.703125 C 11.824219 8.027344 11.191406 7.152344 9.867188 6.773438 C 8.847656 6.480469 7.773438 6.601562 6.785156 7.335938 C 6.320312 7.683594 5.996094 8.210938 5.84375 8.710938 C 5.449219 9.996094 6.261719 11.144531 6.628906 11.558594 L 7.4375 12.421875 C 7.605469 12.59375 8.007812 13.035156 7.808594 13.667969 C 7.597656 14.359375 6.765625 14.804688 5.914062 14.542969 C 5.53125 14.425781 4.984375 14.144531 5.105469 13.742188 C 5.15625 13.578125 5.273438 13.457031 5.335938 13.316406 C 5.394531 13.195312 5.421875 13.105469 5.441406 13.050781 C 5.597656 12.542969 5.382812 11.878906 4.835938 11.710938 C 4.328125 11.554688 3.808594 11.679688 3.605469 12.332031 C 3.378906 13.078125 3.734375 14.425781 5.640625 15.015625 C 7.875 15.703125 9.765625 14.484375 10.035156 12.898438 C 10.203125 11.90625 9.753906 11.167969 8.933594 10.21875 L 8.261719 9.476562 C 7.855469 9.070312 7.71875 8.378906 8.136719 7.847656 C 8.492188 7.402344 8.996094 7.210938 9.824219 7.433594 C 11.03125 7.761719 11.566406 8.597656 12.464844 9.273438 C 12.09375 10.492188 11.851562 11.710938 11.632812 12.804688 L 11.5 13.621094 C 10.855469 16.984375 10.367188 18.832031 9.09375 19.890625 C 8.839844 20.074219 8.472656 20.347656 7.917969 20.367188 C 7.628906 20.375 7.535156 20.175781 7.53125 20.089844 C 7.527344 19.886719 7.695312 19.792969 7.808594 19.703125 C 7.980469 19.609375 8.238281 19.457031 8.21875 18.960938 C 8.203125 18.378906 7.71875 17.875 7.023438 17.898438 C 6.5 17.917969 5.703125 18.40625 5.734375 19.308594 C 5.765625 20.238281 6.628906 20.933594 7.9375 20.890625 C 8.636719 20.867188 10.195312 20.582031 11.730469 18.753906 C 13.519531 16.660156 14.019531 14.261719 14.394531 12.503906 L 14.816406 10.183594 C 15.050781 10.210938 15.300781 10.230469 15.570312 10.238281 C 17.796875 10.285156 18.910156 9.132812 18.929688 8.292969 C 18.941406 7.785156 18.597656 7.285156 18.113281 7.296875 C 17.769531 7.304688 17.335938 7.535156 17.230469 8.011719 C 17.128906 8.480469 17.941406 8.902344 17.308594 9.3125 C 16.855469 9.605469 16.050781 9.808594 14.914062 9.644531 L 15.121094 8.5 C 15.542969 6.335938 16.0625 3.671875 18.035156 3.609375 C 18.179688 3.601562 18.703125 3.613281 18.71875 3.960938 C 18.722656 4.078125 18.691406 4.109375 18.554688 4.375 C 18.417969 4.582031 18.363281 4.757812 18.371094 4.960938 C 18.390625 5.511719 18.8125 5.875 19.417969 5.855469 C 20.234375 5.828125 20.46875 5.035156 20.453125 4.628906 C 20.421875 3.671875 19.410156 3.066406 18.078125 3.109375 Z M 18.078125 3.109375"></path>
+			</svg>
+		</span>
+		<span class="sf-toolbar-value">Server</span>
+	</div>
+	<div class="sf-toolbar-info">
+		<div class="sf-toolbar-info-group">
+			<div class="sf-toolbar-info-piece">
+				<b>Symfony CLI</b>5.11.0
+			</div>
+			<div class="sf-toolbar-info-piece">
+				<b>PHP</b>PHP FPM 8.3.6
+			</div>
+			<div class="sf-toolbar-info-piece">
+				<b>Tunnel</b><span class="sf-toolbar-status sf-toolbar-status-red">Down</span>
+			</div>
+			<div class="sf-toolbar-info-piece">
+				<b>Docker Compose</b><span class="sf-toolbar-status sf-toolbar-status-red">Down</span>
+			</div>
+			<div class="sf-toolbar-info-piece">
+				<b>Env Vars</b><span class="sf-toolbar-status sf-toolbar-status-red">None</span>
+			</div>
+			<div class="sf-toolbar-info-piece"><b>RabbitMQ UI</b> <span class="sf-toolbar-status sf-toolbar-status-red">Down</span></div>
+			<div class="sf-toolbar-info-piece"><b>Webmail</b> <span class="sf-toolbar-status sf-toolbar-status-red">Down</span></div>
+			<div class="sf-toolbar-info-piece">
+				<b><a class="sf-cli-blackfire" href="https://blackfire.io/" rel="noopener" target="_blank">Blackfire.io Agent</a></b><span class="sf-toolbar-status sf-toolbar-status-red">Down</span></div>
+		
+		</div>
+	</div>
+	<div></div>
+</div>
+<button class="hide-button" type="button" id="sfToolbarHideButton-20191c" title="Close Toolbar" accesskey="D" aria-expanded="true" aria-controls="sfToolbarMainContent-20191c">
+        <svg xmlns="http://www.w3.org/2000/svg" data-icon-name="icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+    </button>
+</div>
+<!-- END of Symfony Web Debug Toolbar -->
+</div><link rel="stylesheet" nonce="46c6a7b769bf2b56e0c3c7f22c991cd8" href="index_files/styles.css"><script nonce="bc36848ef81ab2f7c1cda169d2f8f8e3">/*<![CDATA[*/    if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {        Sfjs = (function() {            "use strict";            if ('classList' in document.documentElement) {                var hasClass = function (el, cssClass) { return el.classList.contains(cssClass); };                var removeClass = function(el, cssClass) { el.classList.remove(cssClass); };                var addClass = function(el, cssClass) { el.classList.add(cssClass); };                var toggleClass = function(el, cssClass) { el.classList.toggle(cssClass); };            } else {                var hasClass = function (el, cssClass) { return el.className.match(new RegExp('\\b' + cssClass + '\\b')); };                var removeClass = function(el, cssClass) { el.className = el.className.replace(new RegExp('\\b' + cssClass + '\\b'), ' '); };                var addClass = function(el, cssClass) { if (!hasClass(el, cssClass)) { el.className += " " + cssClass; } };                var toggleClass = function(el, cssClass) { hasClass(el, cssClass) ? removeClass(el, cssClass) : addClass(el, cssClass); };            }            var noop = function() {};            var profilerStorageKey = 'symfony/profiler/';            var addEventListener;            var el = document.createElement('div');            if (!('addEventListener' in el)) {                addEventListener = function (element, eventName, callback) {                    element.attachEvent('on' + eventName, callback);                };            } else {                addEventListener = function (element, eventName, callback) {                    element.addEventListener(eventName, callback, false);                };            }            var request = function(url, onSuccess, onError, payload, options, tries) {                url = new URL(url);                url.searchParams.set('XDEBUG_IGNORE', '1');                url = url.toString();                var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');                options = options || {};                options.retry = options.retry || false;                tries = tries || 1;                /* this delays for 125, 375, 625, 875, and 1000, ... */                var delay = tries < 5 ? (tries - 0.5) * 250 : 1000;                xhr.open(options.method || 'GET', url, true);                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');                xhr.onreadystatechange = function(state) {                    if (4 !== xhr.readyState) {                        return null;                    }                    if (xhr.status == 404 && options.retry && !options.stop) {                        setTimeout(function() {                            if (options.stop) {                                return;                            }                            request(url, onSuccess, onError, payload, options, tries + 1);                        }, delay);                        return null;                    }                    if (200 === xhr.status) {                        (onSuccess || noop)(xhr);                    } else {                        (onError || noop)(xhr);                    }                };                if (options.onSend) {                    options.onSend(tries);                }                xhr.send(payload || '');            };            var getPreference = function(name) {                if (!window.localStorage) {                    return null;                }                return localStorage.getItem(profilerStorageKey + name);            };            var setPreference = function(name, value) {                if (!window.localStorage) {                    return null;                }                localStorage.setItem(profilerStorageKey + name, value);            };            var requestStack = [];            var extractHeaders = function(xhr, stackElement) {                /* Here we avoid to call xhr.getResponseHeader in order to */                /* prevent polluting the console with CORS security errors */                var allHeaders = xhr.getAllResponseHeaders();                var ret;                if (ret = allHeaders.match(/^x-debug-token:\s+(.*)$/im)) {                    stackElement.profile = ret[1];                }                if (ret = allHeaders.match(/^x-debug-token-link:\s+(.*)$/im)) {                    stackElement.profilerUrl = ret[1];                }                if (ret = allHeaders.match(/^Symfony-Debug-Toolbar-Replace:\s+(.*)$/im)) {                    stackElement.toolbarReplaceFinished = false;                    stackElement.toolbarReplace = '1' === ret[1];                }            };            var successStreak = 4;            var pendingRequests = 0;            var renderAjaxRequests = function() {                var requestCounter = document.querySelector('.sf-toolbar-ajax-request-counter');                if (!requestCounter) {                    return;                }                requestCounter.textContent = requestStack.length;                var infoSpan = document.querySelector(".sf-toolbar-ajax-info");                if (infoSpan) {                    infoSpan.textContent = requestStack.length + ' AJAX request' + (requestStack.length !== 1 ? 's' : '');                }                var ajaxToolbarPanel = document.querySelector('.sf-toolbar-block-ajax');                if (requestStack.length) {                    ajaxToolbarPanel.style.display = 'block';                } else {                    ajaxToolbarPanel.style.display = 'none';                }                if (pendingRequests > 0) {                    addClass(ajaxToolbarPanel, 'sf-ajax-request-loading');                } else if (successStreak < 4) {                    addClass(ajaxToolbarPanel, 'sf-toolbar-status-red');                    removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');                } else {                    removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');                    removeClass(ajaxToolbarPanel, 'sf-toolbar-status-red');                }            };            var startAjaxRequest = function(index) {                var tbody = document.querySelector('.sf-toolbar-ajax-request-list');                if (!tbody) {                    return;                }                var nbOfAjaxRequest = tbody.rows.length;                if (nbOfAjaxRequest >= 100) {                    tbody.deleteRow(0);                }                var request = requestStack[index];                pendingRequests++;                var row = document.createElement('tr');                request.DOMNode = row;                var requestNumberCell = document.createElement('td');                requestNumberCell.textContent = index + 1;                row.appendChild(requestNumberCell);                var profilerCell = document.createElement('td');                profilerCell.textContent = 'n/a';                row.appendChild(profilerCell);                var methodCell = document.createElement('td');                methodCell.textContent = request.method;                row.appendChild(methodCell);                var typeCell = document.createElement('td');                typeCell.textContent = request.type;                row.appendChild(typeCell);                var statusCodeCell = document.createElement('td');                var statusCode = document.createElement('span');                statusCode.textContent = 'n/a';                statusCodeCell.appendChild(statusCode);                row.appendChild(statusCodeCell);                var pathCell = document.createElement('td');                pathCell.className = 'sf-ajax-request-url';                if ('GET' === request.method) {                    var pathLink = document.createElement('a');                    pathLink.setAttribute('href', request.url);                    pathLink.textContent = request.url;                    pathCell.appendChild(pathLink);                } else {                    pathCell.textContent = request.url;                }                pathCell.setAttribute('title', request.url);                row.appendChild(pathCell);                var durationCell = document.createElement('td');                durationCell.className = 'sf-ajax-request-duration';                durationCell.textContent = 'n/a';                row.appendChild(durationCell);                request.liveDurationHandle = setInterval(function() {                    durationCell.textContent = (new Date() - request.start) + ' ms';                }, 100);                row.className = 'sf-ajax-request sf-ajax-request-loading';                tbody.insertBefore(row, null);                var toolbarInfo = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');                toolbarInfo.scrollTop = toolbarInfo.scrollHeight;                renderAjaxRequests();            };            var finishAjaxRequest = function(index) {                var request = requestStack[index];                clearInterval(request.liveDurationHandle);                if (!request.DOMNode) {                    return;                }                if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {                    /* Flag as complete because finishAjaxRequest can be called multiple times. */                    request.toolbarReplaceFinished = true;                    /* Search up through the DOM to find the toolbar's container ID. */                    for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {                        if (elem.id.match(/^sfwdt/)) {                            Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);                            break;                        }                    }                }                pendingRequests--;                var row = request.DOMNode;                /* Unpack the children from the row */                var profilerCell = row.children[1];                var methodCell = row.children[2];                var statusCodeCell = row.children[4];                var statusCodeElem = statusCodeCell.children[0];                var durationCell = row.children[6];                if (request.error) {                    row.className = 'sf-ajax-request sf-ajax-request-error';                    methodCell.className = 'sf-ajax-request-error';                    successStreak = 0;                } else {                    row.className = 'sf-ajax-request sf-ajax-request-ok';                    successStreak++;                }                if (request.statusCode) {                    if (request.statusCode < 300) {                        statusCodeElem.setAttribute('class', 'sf-toolbar-status');                    } else if (request.statusCode < 400) {                        statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-yellow');                    } else {                        statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');                    }                    statusCodeElem.textContent = request.statusCode;                } else {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');                }                if (request.duration) {                    durationCell.textContent = request.duration + ' ms';                }                if (request.profilerUrl) {                    profilerCell.textContent = '';                    var profilerLink = document.createElement('a');                    profilerLink.setAttribute('href', request.profilerUrl);                    profilerLink.textContent = request.profile;                    profilerCell.appendChild(profilerLink);                }                renderAjaxRequests();            };                        if (window.fetch && window.fetch.polyfill === undefined) {                var oldFetch = window.fetch;                window.fetch = function () {                    var promise = oldFetch.apply(this, arguments);                    var url = arguments[0];                    var params = arguments[1];                    var paramType = Object.prototype.toString.call(arguments[0]);                    if (paramType === '[object Request]') {                        url = arguments[0].url;                        params = {                            method: arguments[0].method,                            credentials: arguments[0].credentials,                            headers: arguments[0].headers,                            mode: arguments[0].mode,                            redirect: arguments[0].redirect                        };                    } else {                        url = String(url);                    }                    if (!url.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var method = 'GET';                        if (params && params.method !== undefined) {                            method = params.method;                        }                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'fetch',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        promise.then(function (r) {                            stackElement.duration = new Date() - stackElement.start;                            stackElement.error = r.status < 200 || r.status >= 400;                            stackElement.statusCode = r.status;                            stackElement.profile = r.headers.get('x-debug-token');                            stackElement.profilerUrl = r.headers.get('x-debug-token-link');                            stackElement.toolbarReplaceFinished = false;                            stackElement.toolbarReplace = '1' === r.headers.get('Symfony-Debug-Toolbar-Replace');                            finishAjaxRequest(idx);                        }, function (e){                            stackElement.error = true;                            finishAjaxRequest(idx);                        });                        startAjaxRequest(idx);                    }                    return promise;                };            }            if (window.XMLHttpRequest && XMLHttpRequest.prototype.addEventListener) {                var proxied = XMLHttpRequest.prototype.open;                XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {                    var self = this;                    /* prevent logging AJAX calls to static and inline files, like templates */                    var path = url;                    if (url.slice(0, 1) === '/') {                        if (0 === url.indexOf('')) {                            path = url.slice(0);                        }                    }                    else if (0 === url.indexOf('http\u003A\/\/127.0.0.1\u003A8000')) {                        path = url.slice(21);                    }                    if (!path.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'xhr',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        this.addEventListener('readystatechange', function() {                            if (self.readyState == 4) {                                stackElement.duration = new Date() - stackElement.start;                                stackElement.error = self.status < 200 || self.status >= 400;                                stackElement.statusCode = self.status;                                extractHeaders(self, stackElement);                                finishAjaxRequest(idx);                            }                        }, false);                        startAjaxRequest(idx);                    }                    proxied.apply(this, Array.prototype.slice.call(arguments));                };            }                        return {                hasClass: hasClass,                removeClass: removeClass,                addClass: addClass,                toggleClass: toggleClass,                getPreference: getPreference,                setPreference: setPreference,                addEventListener: addEventListener,                request: request,                renderAjaxRequests: renderAjaxRequests,                getSfwdt: function(token) {                    if (!this.sfwdt) {                        this.sfwdt = document.getElementById('sfwdt' + token);                    }                    return this.sfwdt;                },                load: function(selector, url, onSuccess, onError, options) {                    var el = document.getElementById(selector);                    if (el && el.getAttribute('data-sfurl') !== url) {                        request(                            url,                            function(xhr) {                                el.innerHTML = xhr.responseText;                                el.setAttribute('data-sfurl', url);                                removeClass(el, 'loading');                                var pending = pendingRequests;                                for (var i = 0; i < requestStack.length; i++) {                                    startAjaxRequest(i);                                    if (requestStack[i].duration) {                                        finishAjaxRequest(i);                                    }                                }                                /* Revert the pending state in case there was a start called without a finish above. */                                pendingRequests = pending;                                (onSuccess || noop)(xhr, el);                            },                            function(xhr) { (onError || noop)(xhr, el); },                            '',                            options                        );                    }                    return this;                },                showToolbar: function(token) {                    var sfwdt = this.getSfwdt(token);                    removeClass(sfwdt, 'sf-display-none');                    if (getPreference('toolbar/displayState') == 'none') {                        document.getElementById('sfToolbarMainContent-' + token).style.display = 'none';                        document.getElementById('sfToolbarClearer-' + token).style.display = 'none';                        document.getElementById('sfMiniToolbar-' + token).style.display = 'block';                    } else {                        document.getElementById('sfToolbarMainContent-' + token).style.display = 'block';                        document.getElementById('sfToolbarClearer-' + token).style.display = 'block';                        document.getElementById('sfMiniToolbar-' + token).style.display = 'none';                    }                },                hideToolbar: function(token) {                    var sfwdt = this.getSfwdt(token);                    addClass(sfwdt, 'sf-display-none');                },                initToolbar: function(token) {                    this.showToolbar(token);                    var hideButton = document.getElementById('sfToolbarHideButton-' + token);                    var hideButtonSvg = hideButton.querySelector('svg');                    hideButtonSvg.setAttribute('aria-hidden', 'true');                    hideButtonSvg.setAttribute('focusable', 'false');                    addEventListener(hideButton, 'click', function (event) {                        event.preventDefault();                        var p = this.parentNode;                        p.style.display = 'none';                        (p.previousElementSibling || p.previousSibling).style.display = 'none';                        document.getElementById('sfMiniToolbar-' + token).style.display = 'block';                        setPreference('toolbar/displayState', 'none');                    });                    var showButton = document.getElementById('sfToolbarMiniToggler-' + token);                    var showButtonSvg = showButton.querySelector('svg');                    showButtonSvg.setAttribute('aria-hidden', 'true');                    showButtonSvg.setAttribute('focusable', 'false');                    addEventListener(showButton, 'click', function (event) {                        event.preventDefault();                        var elem = this.parentNode;                        if (elem.style.display == 'none') {                            document.getElementById('sfToolbarMainContent-' + token).style.display = 'none';                            document.getElementById('sfToolbarClearer-' + token).style.display = 'none';                            elem.style.display = 'block';                        } else {                            document.getElementById('sfToolbarMainContent-' + token).style.display = 'block';                            document.getElementById('sfToolbarClearer-' + token).style.display = 'block';                            elem.style.display = 'none'                        }                        setPreference('toolbar/displayState', 'block');                    });                },                loadToolbar: function(token, newToken) {                    var that = this;                    var triesCounter = document.getElementById('sfLoadCounter-' + token);                    var options = {                        retry: true,                        onSend: function (count) {                            if (count === 3) {                                that.initToolbar(token);                            }                            if (triesCounter) {                                triesCounter.textContent = count;                            }                        },                    };                    var cancelButton = document.getElementById('sfLoadCancel-' + token);                    if (cancelButton) {                        addEventListener(cancelButton, 'click', function (event) {                            event.preventDefault();                            options.stop = true;                            that.hideToolbar(token);                        });                    }                    newToken = (newToken || token);                    this.load(                        'sfwdt' + token,                        'http\u003A\/\/127.0.0.1\u003A8000\/_wdt\/xxxxxx'.replace(/xxxxxx/, newToken),                        function(xhr, el) {                            /* Do nothing in the edge case where the toolbar has already been replaced with a new one */                            if (!document.getElementById('sfToolbarMainContent-' + newToken)) {                                return;                            }                            /* Evaluate in global scope scripts embedded inside the toolbar */                            var i, scripts = [].slice.call(el.querySelectorAll('script'));                            for (i = 0; i < scripts.length; ++i) {                                if (scripts[i].firstChild) {                                    eval.call({}, scripts[i].firstChild.nodeValue);                                }                            }                            el.style.display = -1 !== xhr.responseText.indexOf('sf-toolbarreset') ? 'block' : 'none';                            if (el.style.display == 'none') {                                return;                            }                            that.initToolbar(newToken);                            /* Handle toolbar-info position */                            var toolbarBlocks = [].slice.call(el.querySelectorAll('.sf-toolbar-block'));                            for (i = 0; i < toolbarBlocks.length; ++i) {                                toolbarBlocks[i].onmouseover = function () {                                    var toolbarInfo = this.querySelectorAll('.sf-toolbar-info')[0];                                    var pageWidth = document.body.clientWidth;                                    var elementWidth = toolbarInfo.offsetWidth;                                    var leftValue = (elementWidth + this.offsetLeft) - pageWidth;                                    var rightValue = (elementWidth + (pageWidth - this.offsetLeft)) - pageWidth;                                    /* Reset right and left value, useful on window resize */                                    toolbarInfo.style.right = '';                                    toolbarInfo.style.left = '';                                    if (elementWidth > pageWidth) {                                        toolbarInfo.style.left = 0;                                    }                                    else if (leftValue > 0 && rightValue > 0) {                                        toolbarInfo.style.right = (rightValue * -1) + 'px';                                    } else if (leftValue < 0) {                                        toolbarInfo.style.left = 0;                                    } else {                                        toolbarInfo.style.right = '0px';                                    }                                };                            }                            renderAjaxRequests();                            addEventListener(document.querySelector('.sf-toolbar-ajax-clear'), 'click', function() {                                requestStack = [];                                renderAjaxRequests();                                successStreak = 4;                                document.querySelector('.sf-toolbar-ajax-request-list').innerHTML = '';                            });                            addEventListener(document.querySelector('.sf-toolbar-block-ajax'), 'mouseenter', function (event) {                                var elem = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');                                elem.scrollTop = elem.scrollHeight;                            });                            addEventListener(document.querySelector('.sf-toolbar-block-ajax > .sf-toolbar-icon'), 'click', function (event) {                                event.preventDefault();                                toggleClass(this.parentNode, 'hover');                            });                            var dumpInfo = document.querySelector('.sf-toolbar-block-dump .sf-toolbar-info');                            if (null !== dumpInfo) {                                addEventListener(dumpInfo, 'sfbeforedumpcollapse', function () {                                    dumpInfo.style.minHeight = dumpInfo.getBoundingClientRect().height+'px';                                });                                addEventListener(dumpInfo, 'mouseleave', function () {                                    dumpInfo.style.minHeight = '';                                });                            }                        },                        function(xhr) {                            if (xhr.status !== 0 && !options.stop) {                                var sfwdt = that.getSfwdt(token);                                sfwdt.innerHTML = '\                                <div class="sf-toolbarreset notranslate">\                                    <div class="sf-toolbar-icon"><svg width="26" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 28" enable-background="new 0 0 26 28" xml:space="preserve"><path fill="#FFFFFF" d="M13 0C5.8 0 0 5.8 0 13c0 7.2 5.8 13 13 13c7.2 0 13-5.8 13-13C26 5.8 20.2 0 13 0z M20 7.5 c-0.6 0-1-0.3-1-0.9c0-0.2 0-0.4 0.2-0.6c0.1-0.3 0.2-0.3 0.2-0.4c0-0.3-0.5-0.4-0.7-0.4c-2 0.1-2.5 2.7-2.9 4.8l-0.2 1.1 c1.1 0.2 1.9 0 2.4-0.3c0.6-0.4-0.2-0.8-0.1-1.3C18 9.2 18.4 9 18.7 8.9c0.5 0 0.8 0.5 0.8 1c0 0.8-1.1 2-3.3 1.9 c-0.3 0-0.5 0-0.7-0.1L15 14.1c-0.4 1.7-0.9 4.1-2.6 6.2c-1.5 1.8-3.1 2.1-3.8 2.1c-1.3 0-2.1-0.6-2.2-1.6c0-0.9 0.8-1.4 1.3-1.4 c0.7 0 1.2 0.5 1.2 1.1c0 0.5-0.2 0.6-0.4 0.7c-0.1 0.1-0.3 0.2-0.3 0.4c0 0.1 0.1 0.3 0.4 0.3c0.5 0 0.9-0.3 1.2-0.5 c1.3-1 1.7-2.9 2.4-6.2l0.1-0.8c0.2-1.1 0.5-2.3 0.8-3.5c-0.9-0.7-1.4-1.5-2.6-1.8c-0.8-0.2-1.3 0-1.7 0.4C8.4 10 8.6 10.7 9 11.1 l0.7 0.7c0.8 0.9 1.3 1.7 1.1 2.7c-0.3 1.6-2.1 2.8-4.3 2.1c-1.9-0.6-2.2-1.9-2-2.7c0.2-0.6 0.7-0.8 1.2-0.6 c0.5 0.2 0.7 0.8 0.6 1.3c0 0.1 0 0.1-0.1 0.3C6 15 5.9 15.2 5.9 15.3c-0.1 0.4 0.4 0.7 0.8 0.8c0.8 0.3 1.7-0.2 1.9-0.9 c0.2-0.6-0.2-1.1-0.4-1.2l-0.8-0.9c-0.4-0.4-1.2-1.5-0.8-2.8c0.2-0.5 0.5-1 0.9-1.4c1-0.7 2-0.8 3-0.6c1.3 0.4 1.9 1.2 2.8 1.9 c0.5-1.3 1.1-2.6 2-3.8c0.9-1 2-1.7 3.3-1.8C20 4.8 21 5.4 21 6.3C21 6.7 20.8 7.5 20 7.5z"/></svg></div>\                                    An error occurred while loading the web debug toolbar. <a href="http\u003A\/\/127.0.0.1\u003A8000\/_profiler\/' + newToken + '">Open the web profiler.</a>\                                </div>\                            ';                                sfwdt.setAttribute('class', 'sf-toolbar sf-error-toolbar');                            }                        },                        options                    );                    return this;                },                toggle: function(selector, elOn, elOff) {                    var tmp = elOn.style.display,                        el = document.getElementById(selector);                    elOn.style.display = elOff.style.display;                    elOff.style.display = tmp;                    if (el) {                        el.style.display = 'none' === tmp ? 'none' : 'block';                    }                    return this;                },            };        })();    }    Sfjs.loadToolbar('20191c');/*]]>*/</script>
+
+</body></html>
