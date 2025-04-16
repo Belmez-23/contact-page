@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ContactController extends AbstractController
 {
-    #[Route('')]
+    #[Route('/contacts', name: 'contacts')]
     public function index(ContactService $contactService): Response
     {
         return $this->render('contact/index.html.twig', [
