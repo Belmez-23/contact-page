@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Contact Information{% endblock %}</title> {% block stylesheets %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="/">На главную</a></li>
+            <li><a href="/">Услуги</a></li>
+            <li><a href="/">Информация</a></li>
+            <li><a href="/">О компании</a></li>
+        </ul>
+        <div class="contact-number">
+            <p>☎ {{ contactPhone }}</p>
+        </div>
+    </nav>
+    <div class="contact-container">
+        <h1>Контактная информация</h1>
+        <div class="contact-details">
+            <p><strong>Телефон:</strong> {{ contactPhone }}</p>
+            <p><strong>Email:</strong> <a href="mailto:{{ contactEmail }}">{{ contactEmail }}</a></p>
+            <p><strong>Рабочие часы:</strong> {{ workingHours }}</p>
+            <p><strong>Юридический адрес:</strong> {{ address }}</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <ul class="footer-menu">
+            <li><h3>Информация</h3>
+                <ul class="submenu">
+                    <li>О компании</li>
+                    <li>Вакансии</li>
+                    <li>Контакты</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-contact">
+            <p>{{ contactPhone }}</p>
+            <p><a href="mailto:{{ contactEmail }}">{{ contactEmail }}</a></p>
+            <p>{{ workingHours }}</p>
+            <p>{{ address }}</p>
+        </div>
+    </footer>
+{% endblock %}
+</body>
+</html>
