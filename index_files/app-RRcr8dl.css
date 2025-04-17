@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+}
+
+.contact-number {
+    padding: 14px 16px;
+    color: white;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-details {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+.contact-details a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-menu > li {
+    position: relative;
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.submenu li {
+    margin-bottom: 5px;
+}
+
+.submenu a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.footer-contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
